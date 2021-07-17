@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StarredReposComponent } from './pages/starred-repos/starred-repos.component';
+import { StarredRepoComponent } from './components/starred-repo/starred-repo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StarredReposComponent,
+    StarredRepoComponent
   ],
   imports: [
     BrowserModule,
