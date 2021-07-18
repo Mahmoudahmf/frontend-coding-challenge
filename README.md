@@ -11,3 +11,6 @@ You'll be fetching the sorted JSON data directly from the Github API (Github API
   load all the repos to the DOM for UX enhancements
 
 - Moment library used for date formating and transforming
+
+## Demo
+https://frontend-challenge-gemography.herokuapp.com/starred-repos
