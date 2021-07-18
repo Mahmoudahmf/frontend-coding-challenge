@@ -1,1 +1,12 @@
-<p>starred-repo works!</p>
+<div class="form">
+  <div class="avatar">
+    <img [src]="starredRepo?.owner?.avatar_url" [alt]="starredRepo?.owner?.login">
+  </div>
+  <div class="name">
+   <h2>{{starredRepo?.name}}</h2>
+   <p>{{starredRepo?.description}}</p>
+
+   <span> Stars: {{starredRepo?.stargazers_count}}</span> &nbsp;<span >Issues :{{starredRepo?.open_issues_count}} </span>
+  </div>
+
+</div>

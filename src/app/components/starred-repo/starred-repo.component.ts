@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { StarredRepo } from './../../models/starred-repo.model';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-starred-repo',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./starred-repo.component.scss']
 })
 export class StarredRepoComponent implements OnInit {
+  @Input() starredRepo!: StarredRepo;
+  constructor() {
 
-  constructor() { }
+  }
 
   ngOnInit(): void {
   }
