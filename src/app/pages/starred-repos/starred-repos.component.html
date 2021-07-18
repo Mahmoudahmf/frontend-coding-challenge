@@ -1,1 +1,11 @@
-<p>starred-repos works!</p>
+<div>
+  <div class="search-results" infinite-scroll (scrolled)="onScroll()">
+    <app-starred-repo
+      *ngFor="let starredRepo of starredRepos"
+      [starredRepo]="starredRepo"
+    >
+    </app-starred-repo>
+  </div>
+
+  <div class="loading" *ngIf="isLoading">Loading....</div>
+</div>
